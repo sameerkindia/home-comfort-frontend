@@ -1,0 +1,11 @@
+.header {
+  width: 100vw;
+  height: 95vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(232, 228, 255, 0.2),
+      rgba(66, 68, 120, 0.5)
+    ),
+    url("../../public/images/background-image.jpg") no-repeat;
+  background-size: cover;
+}
