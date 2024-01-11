@@ -1,11 +1,23 @@
 .header {
   width: 100vw;
   height: 95vh;
-  background: linear-gradient(
-      to bottom,
-      rgba(232, 228, 255, 0.2),
-      rgba(66, 68, 120, 0.5)
-    ),
+  background: linear-gradient(rgba(66, 68, 120, 0.5), rgba(66, 68, 120, 0.5)),
     url("../../public/images/background-image.jpg") no-repeat;
   background-size: cover;
+}
+
+.header-nav {
+  background-color: "";
+  color: var(--clr-ff) !important;
+}
+
+.big-headline {
+  font-size: 12rem;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+
+.medium-headilne {
+  font-size: 7.5rem;
+  font-family: "Pacifico", cursive;
 }

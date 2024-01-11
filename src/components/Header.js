@@ -1,23 +1,19 @@
-import { Link } from "react-router-dom";
+import Button from "./Button";
 import "./Header.css";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
     <header className="header">
-      <nav className="header-nav">
-        <div className="nav-links">
-          {/* <Link to="/">Home</Link>
-          <Link to="/product">Product</Link>
-          <Link to="/about">About</Link> */}
-          <a>Home</a>
-          <a>Home</a>
-          <a>Home</a>
-        </div>
-        <div className="logo">
-          <h1>home comfort</h1>
-        </div>
-        {/* <icon></icon> */}
-      </nav>
+      <Navbar isClass={"header-nav"} />
+
+      <div className="text-div container">
+        <p className="big-headline">Rest, Relax, Unwind</p>
+        <p className="medium-headilne">Embrace your choices - we do</p>
+        <Button linkPath="/product" isClass={true}>
+          Shop now
+        </Button>
+      </div>
     </header>
   );
 }

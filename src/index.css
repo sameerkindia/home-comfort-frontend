@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 html {
-  font-size: 0.628%;
+  font-size: 62.5%;
 }
 
 :root {
@@ -13,4 +17,17 @@ html {
   --clr-primary: #2a2638;
   --clr-secondery: #424478;
   --clr-accent: #e8e4ff;
+
+  --clr-ff: #fff;
+  --clr-gray: rgb(41, 39, 39);
+}
+
+body {
+  font-family: Kanit, sans-serif;
+}
+
+.container {
+  width: 90vw;
+  max-width: 170rem;
+  margin: 0 auto;
 }
