@@ -50,3 +50,7 @@ img {
   width: 100%;
   display: block;
 }
+
+ul {
+  list-style: none;
+}

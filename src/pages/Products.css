@@ -1,0 +1,41 @@
+.product-container {
+  min-height: 80rem;
+  padding: 2rem 0;
+  display: flex;
+
+  position: relative;
+}
+
+.filter-bar {
+  align-self: flex-start;
+  padding: 1rem;
+  flex-basis: 25%;
+  position: sticky;
+  top: 0;
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+.search-bar {
+  width: 100%;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.catagory li {
+  font-size: 2rem;
+  color: var(--clr-ff);
+}
+
+.product-div {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

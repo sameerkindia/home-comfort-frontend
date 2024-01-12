@@ -3,9 +3,8 @@ import "./FeatureProduct.css";
 import { Link } from "react-router-dom";
 
 function FeatureProduct({ product }) {
-  console.log(product.id);
   const itemData = product.fields;
-  const image = itemData.image[0].thumbnails.large.url;
+  const image = itemData.image[0].thumbnails.small.url;
   return (
     <article className="feature-item">
       <div className="feature-image">
