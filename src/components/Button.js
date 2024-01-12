@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom/cjs/react-router-dom";
-import "./Button";
+import { Link } from "react-router-dom";
+import "./Button.css";
 
 function Button({ linkPath, children, isClass }) {
-  // if (isClass) {
-  //   return (
-  //     <Link to={linkPath} className="btn main-btn">
-  //       {children}
-  //     </Link>
-  //   );
-  // }
+  if (isClass) {
+    return (
+      <Link to={linkPath} className="btn main-btn">
+        {children}
+      </Link>
+    );
+  }
 
   return (
-    <Link to={linkPath} className="btn btn2 btn3">
+    <Link to={linkPath} className="btn btn-2">
       {children}
     </Link>
   );

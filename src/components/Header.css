@@ -12,12 +12,14 @@
 }
 
 .big-headline {
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: bold;
   font-family: "Pacifico", cursive;
+  margin-top: 8rem;
 }
 
 .medium-headilne {
+  margin: 1rem 0 3rem 0;
   font-size: 7.5rem;
   font-family: "Pacifico", cursive;
 }

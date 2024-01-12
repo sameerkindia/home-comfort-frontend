@@ -1,14 +1,20 @@
-// import { Link } from "react-router-dom";
-import { BrowserRouter, Route } from "react-router-dom/cjs/react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ShopingContext from "./context/shopingContext";
+import { useReducer } from "react";
+import { initialState, reducer } from "./context/shopingReducer";
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <>
+    <ShopingContext.Provider value={{ state, dispatch }}>
       <BrowserRouter>
-        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </BrowserRouter>
-    </>
+    </ShopingContext.Provider>
   );
 }
 

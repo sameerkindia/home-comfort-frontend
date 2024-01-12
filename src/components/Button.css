@@ -1,12 +1,21 @@
 .btn {
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 2.6rem;
   border: 2px solid #fff;
   color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  transition: all 0.3s;
+  box-shadow: 2px 4px 1rem rgba(0, 0, 0, 0.6);
 }
-.btn1:link {
-  text-decoration: none;
-  font-size: 2.6rem;
-  border: 2px solid #fff;
-  color: #fff;
+
+.btn-2 {
+  background-color: var(--clr-secondery);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary);
+  box-shadow: 2px 8px 1rem rgba(0, 0, 0, 0.6);
 }

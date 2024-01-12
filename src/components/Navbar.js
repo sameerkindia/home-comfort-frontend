@@ -1,6 +1,6 @@
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom/cjs/react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar({ isClass }) {
   return (
