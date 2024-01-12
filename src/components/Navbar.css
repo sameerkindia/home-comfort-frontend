@@ -12,7 +12,7 @@
 
 .logo {
   text-align: center;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .logo h1 {
@@ -22,9 +22,8 @@
 }
 
 .active {
-  /* background-color: var(--clr-primary); */
   color: #2a2638 !important;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .nav-links {

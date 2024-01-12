@@ -17,7 +17,7 @@ function FeatureProduct({ product }) {
         <img src={image} alt="image" />
       </div>
       <h3>{itemData.name}</h3>
-      <p>{itemData.price}</p>
+      <p>$ {itemData.price}</p>
     </article>
   );
 }

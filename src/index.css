@@ -9,7 +9,19 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50.5%;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 62.5%;
+  }
 }
 
 :root {
@@ -24,11 +36,13 @@ html {
 
 body {
   font-family: Kanit, sans-serif;
+  background: var(--clr-background);
+  overflow-x: hidden;
 }
 
 .container {
   width: 90vw;
-  max-width: 170rem;
+  max-width: 165rem;
   margin: 0 auto;
 }
 

@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  height: 95vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(66, 68, 120, 0.5), rgba(66, 68, 120, 0.5)),
     url("../../public/images/background-image.jpg") no-repeat;
   background-size: cover;

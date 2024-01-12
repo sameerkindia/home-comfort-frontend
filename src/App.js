@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import ShopingContext from "./context/shopingContext";
 import { useReducer } from "react";
 import { initialState, reducer } from "./context/shopingReducer";
+import Products from "./pages/Products";
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Products />} />
         </Routes>
       </BrowserRouter>
     </ShopingContext.Provider>

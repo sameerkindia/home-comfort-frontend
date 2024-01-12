@@ -1,5 +1,5 @@
 .home-section {
-  margin: 3rem;
+  margin: 3rem auto;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -15,6 +15,7 @@
 
 .product-div {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
