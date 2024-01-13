@@ -4,19 +4,27 @@
 
 .single-product {
   margin: 5rem auto;
-  display: flex;
-  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .single-product {
+    display: flex;
+    gap: 2rem;
+  }
+  .image-div {
+    flex-basis: 50%;
+  }
 }
 
 .image-div {
-  flex-basis: 50%;
-  height: 60rem;
+  height: 50%;
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .image-div img {
   object-fit: cover;
+  aspect-ratio: 4/3;
   height: inherit;
 }
 
@@ -42,8 +50,14 @@
 
 .description {
   font-size: 1.8rem;
-  width: 70%;
+  width: 100%;
   letter-spacing: 1px;
   line-height: 1.5;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .description {
+    width: 70%;
+  }
 }
