@@ -12,6 +12,16 @@
   flex-basis: 25%;
   position: sticky;
   top: 0;
+  padding-right: 2rem;
+}
+
+.filter-bar li {
+  font-size: 2.2rem !important;
+  cursor: pointer;
+}
+
+.filter-bar li:hover {
+  color: var(--clr-primary);
 }
 
 .sub-heading {
@@ -38,4 +48,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.range-input {
+  width: 100%;
+}
+
+.price {
+  font-size: 1.8rem;
+  text-align: right;
+  padding-right: 1rem;
 }
