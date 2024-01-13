@@ -9,11 +9,11 @@ function FeatureProduct({ product }) {
     <article className="feature-item">
       <div className="feature-image">
         <div className="overlay">
-          <Link className="search-icon" to={`/product/:${product.id}`}>
+          <Link className="search-icon" to={`/product/${product.id}`}>
             <HiSearchCircle />
           </Link>
         </div>
-        <img src={image} alt="image" />
+        <img src={image} alt="product image" />
       </div>
       <h3>{itemData.name}</h3>
       <p>$ {itemData.price}</p>

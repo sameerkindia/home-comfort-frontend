@@ -4,6 +4,7 @@ import ShopingContext from "./context/shopingContext";
 import { useReducer } from "react";
 import { initialState, reducer } from "./context/shopingReducer";
 import Products from "./pages/Products";
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Products />} />
+          <Route path="/product/:id" element={<SingleProduct />} />
         </Routes>
       </BrowserRouter>
     </ShopingContext.Provider>

@@ -22,10 +22,8 @@ function Navbar({ isClass }) {
             <h1>home comfort</h1>
           </Link>
         </div>
-        <div class="icon">
-          <Link to="/cart" class="link">
-            <HiOutlineShoppingCart className="cart-icon" />
-          </Link>
+        <div class="icon link">
+          <HiOutlineShoppingCart className="cart-icon" />
         </div>
       </div>
     </nav>
