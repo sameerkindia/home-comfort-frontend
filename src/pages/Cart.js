@@ -3,6 +3,7 @@ import "./Cart.css";
 import { useContext } from "react";
 import ShopingContext from "../context/shopingContext";
 import CartItem from "../components/CartItem";
+import Button from "../components/Button";
 
 function Cart() {
   const { state, dispatch } = useContext(ShopingContext);
@@ -19,7 +20,23 @@ function Cart() {
           <HiArrowCircleLeft onClick={closeCart} />
         </span>
         <p className="heading">Your Bag</p>
-        <ul>{/* <CartItem product={state.cart[0]} /> */}</ul>
+        <div className="underline"></div>
+        {state.cart.length === 0 && (
+          <p className="no-product">Please add product to cart</p>
+        )}
+
+        <ul>
+          {state.cart.map((product) => {
+            return <CartItem product={product} key={product.id} />;
+          })}
+        </ul>
+
+        <div className="price-box">
+          <p>
+            <span>Total :</span> <span>{state.totalPrice}</span>
+          </p>
+          <Button button={true}>Cheack out</Button>
+        </div>
       </div>
     </aside>
   );

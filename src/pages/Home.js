@@ -7,7 +7,6 @@ import "./Home.css";
 
 function Home() {
   const { state } = useContext(ShopingContext);
-  console.log(state.data[0]);
 
   return (
     <>

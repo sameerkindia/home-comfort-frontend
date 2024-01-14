@@ -22,8 +22,6 @@ function SingleProduct() {
       }
     });
 
-    console.log(isTrue);
-
     const productObj = {
       id: id,
       name: item.name,
@@ -45,7 +43,6 @@ function SingleProduct() {
     dispatch({ type: "OPEN_CART" });
   }
 
-  console.log(state);
   return (
     <main className="product-page">
       <Navbar />

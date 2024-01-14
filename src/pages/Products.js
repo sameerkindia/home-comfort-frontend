@@ -61,7 +61,7 @@ function Products() {
   }
 
   return (
-    <>
+    <main>
       <Navbar />
 
       <section className="container product-container">
@@ -80,7 +80,11 @@ function Products() {
             <ul>
               <li onClick={sortByCompany}>All</li>
               {allCompanys.map((company) => {
-                return <li onClick={sortByCompany}>{company}</li>;
+                return (
+                  <li onClick={sortByCompany} key={company}>
+                    {company}
+                  </li>
+                );
               })}
             </ul>
           </div>
@@ -102,7 +106,7 @@ function Products() {
           {renderArr(sortedArr)}
         </article>
       </section>
-    </>
+    </main>
   );
 }
 
