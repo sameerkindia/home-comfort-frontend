@@ -15,7 +15,7 @@ function Cart() {
   return (
     <aside className={`cart-page ${state.cartOpen && "open"}`}>
       <div className="overlay"></div>
-      <div className="cart">
+      <div className={`cart ${state.cartOpen && "cart-open"}`}>
         <span className="close-btn">
           <HiArrowCircleLeft onClick={closeCart} />
         </span>

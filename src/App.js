@@ -6,6 +6,7 @@ import { initialState, reducer } from "./context/shopingReducer";
 import Products from "./pages/Products";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
+import About from "./pages/About";
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Products />} />
           <Route path="/product/:id" element={<SingleProduct />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </ShopingContext.Provider>

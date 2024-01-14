@@ -31,6 +31,7 @@ function Navbar({ isClass }) {
           </Link>
         </div>
         <div class="icon link">
+          <span>{state.totalQuantity}</span>
           <HiOutlineShoppingCart className="cart-icon" onClick={openCart} />
         </div>
       </div>

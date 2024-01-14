@@ -1,0 +1,12 @@
+.about-page h2 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.about-text {
+  width: 70%;
+  margin: 3rem auto;
+  font-size: 3rem;
+}
